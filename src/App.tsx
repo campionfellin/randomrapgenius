@@ -8,9 +8,7 @@ const App = () => {
   useEffect(() => {
 
     const req = async () => {
-      const response = await fetch('https://api.genius.com/annotations/10225840', {
-        headers: {'Authorization': 'Bearer tgwOHu-njUlWatAIyRQRSEB0hKBweUpTHF9Cwz_MgA119iBHL73v7wXIpALVRanp'}
-      });
+      const response = await fetch('https://api.genius.com/annotations/10225840&access_token=tgwOHu-njUlWatAIyRQRSEB0hKBweUpTHF9Cwz_MgA119iBHL73v7wXIpALVRanp');
     
       const body = await response.text();
       console.log(body);
